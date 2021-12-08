@@ -1,0 +1,17 @@
+
+.header-weather-app{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: linear-gradient(
+        -90deg, #0059B2, #007FFF 120%);;
+    border-bottom: 1px solid grey;
+    
+}
+.header-title{
+    color:#fff;
+    flex: 1;
+    text-align: start;
+    margin-left: 10px;
+}
