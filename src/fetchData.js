@@ -1,4 +1,4 @@
-const API_KEY = "rmJ4kmQSpi0gqd2F3DKDiHoZOibxkEDp";
+const API_KEY = "UA01NJqMP0tlVpJexyIecrIlWXF2e1Kn";
 
 export default async function fetchData(dispatch, input, action) {
   if (action != "autocomplete") {

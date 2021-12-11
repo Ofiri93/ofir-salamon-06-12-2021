@@ -25,7 +25,7 @@ export default function Home(props) {
         options={array}
         onInputChange={(_, newInputValue) => {
           if (newInputValue) {
-            let res = /^[a-zA-Z]+$/.test(newInputValue);
+            let res = /^[a-zA-Z ]+$/.test(newInputValue);
             error(res);
             fetchData(props.dispatch, newInputValue, "autocomplete");
           }
