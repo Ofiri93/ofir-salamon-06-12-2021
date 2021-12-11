@@ -1,7 +1,7 @@
 const API_KEY = "UA01NJqMP0tlVpJexyIecrIlWXF2e1Kn";
 
 export default async function fetchData(dispatch, input, action) {
-  if (action != "autocomplete") {
+  if (action !== "autocomplete") {
     dispatch({
       type: "set-current-city-id",
       payload: { input },
@@ -32,7 +32,7 @@ export default async function fetchData(dispatch, input, action) {
         console.log(rejected);
     });
   }
-  if (action == "autocomplete") {
+  if (action === "autocomplete") {
     await fetch(
       `http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=${API_KEY}&q=${input}`
     )

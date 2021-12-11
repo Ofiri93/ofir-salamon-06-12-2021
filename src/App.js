@@ -1,7 +1,7 @@
 import "./App.css";
 import reducer from "./redux/reducer";
 import fetchData from "./fetchData";
-import { useEffect, useReducer, useState } from "react";
+import { useEffect, useReducer } from "react";
 import Dashboard from "./components/Dashboard/Dashboard";
 import theme from "./theme";
 // const API_KEY = "TakPQd2dhAo27AdPpqAjhbpe9kkAFQb9";
@@ -19,7 +19,7 @@ function App() {
 
   useEffect(() => {
     fetchData(dispatch,state.currentCityId) 
-  }, []);
+  },[]);
   
   return (
     <div className="App">

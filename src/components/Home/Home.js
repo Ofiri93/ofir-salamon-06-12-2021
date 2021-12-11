@@ -32,7 +32,7 @@ export default function Home(props) {
         }}
         highlight={highlight}
         onHighlightChange={(_, newHighlight, reason) => {
-          if (reason == "keyboard" || reason == "mouse") {
+          if (reason === "keyboard" || reason === "mouse") {
             setHighlight(newHighlight);
           }
         }}
