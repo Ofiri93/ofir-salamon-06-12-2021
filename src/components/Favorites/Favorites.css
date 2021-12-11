@@ -1,0 +1,42 @@
+.favorite-weather-app {
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.card-weather-favorites {
+  width: 120px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px 10px 10px;
+  position: relative;
+  cursor: pointer;
+}
+.card-weather-favorites:hover {
+  background: #000000a3;
+}
+.favorites-icon-page:hover {
+  transform: scale(1.2);
+  transition: all 0.3s;
+}
+.card-weather-favorites label {
+  position: relative;
+}
+.card-weather-favorites:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 120px;
+  height: 150px;
+  opacity: 0.6;
+  background-image: url("../../assets/backround-img-small.jpg") !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.no-favorites-option{
+  font-size: 60px;
+  opacity: 0.6;
+}

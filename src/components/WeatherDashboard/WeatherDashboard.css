@@ -1,0 +1,79 @@
+.card-weather-dashboard {
+  width: fit-content;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px 10px 10px;
+  position: relative;
+  color: #fff !important;
+  background: linear-gradient(
+    180deg,
+    #1884efe3,
+    rgb(255 255 255 / 4%)
+  ) !important;
+}
+.weather-dashboard-app {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 700px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.weather-dashboard-app:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 700px;
+  height: 400px;
+  opacity: 0.6;
+  background-image: url("../../assets/backround-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.weather-info {
+  display: flex;
+  position: relative;
+}
+.turn-to-relative {
+  position: relative;
+}
+.favorites-icon {
+  cursor: pointer;
+}
+.weather-text {
+  font-weight: bold;
+  font-size: 50px;
+  color: #fff;
+  text-shadow: 3px 3px #78787899;
+}
+.add-to-favorites-div {
+  font-weight: 500px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-right: 10px;
+}
+.add-to-favorites-div.favorite{
+    cursor: pointer;
+}
+.current-weather-div {
+  display: flex;
+  position: relative;
+}
+.weather-img {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+.weather-dashboard-header {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
