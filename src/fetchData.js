@@ -7,7 +7,7 @@ export default async function fetchData(dispatch, input, action) {
       payload: { input },
     });
     await fetch(
-      `http://dataservice.accuweather.com/currentconditions/v1/${input}?apikey=${API_KEY}`
+      `https://dataservice.accuweather.com/currentconditions/v1/${input}?apikey=${API_KEY}`
     )
       .then((response) => response.json())
       .then((data) => {
@@ -20,7 +20,7 @@ export default async function fetchData(dispatch, input, action) {
     });
      
     await fetch(
-      `http://dataservice.accuweather.com/forecasts/v1/daily/5day/${input}?apikey=${API_KEY}`
+      `https://dataservice.accuweather.com/forecasts/v1/daily/5day/${input}?apikey=${API_KEY}`
     )
       .then((response) => response.json())
       .then((data) => {
@@ -34,7 +34,7 @@ export default async function fetchData(dispatch, input, action) {
   }
   if (action === "autocomplete") {
     await fetch(
-      `http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=${API_KEY}&q=${input}`
+      `https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=${API_KEY}&q=${input}`
     )
       .then((response) => response.json())
       .then((data) => {
